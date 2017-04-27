@@ -1,0 +1,6 @@
+baseURL = "https://joshforb.es/"
+languageCode = "en-us"
+title = "joshforbes"
+
+[Params]
+  Author = "Josh Forbes"
