@@ -1,6 +1,6 @@
 +++
 date = "2017-04-26T21:43:12-04:00"
-draft = true
+draft = false
 title = "Persisting Polymorphism"
 
 +++
