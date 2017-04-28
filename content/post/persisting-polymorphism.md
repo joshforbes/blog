@@ -36,7 +36,7 @@ public function open()
 }
 ```
 
-This implementation would result in the `open()` method being modified anytime a new publishable type is added. Similar methods would have to exist for the other job status changes as well. Not a maintainable approach. If we could abstract the behavior for each of the types into their own classes this method could be significantly cleaned. Consider if the open method could look like this instead:
+This implementation would result in the `open()` method being modified anytime a new publishable type is added. Similar methods would have to exist for the other job status changes as well. Not a maintainable approach. If we could abstract the behavior for each of the types into their own classes this method could be significantly improved. Consider if the open method could look like this instead:
 
 ```javascript
 public function open()
