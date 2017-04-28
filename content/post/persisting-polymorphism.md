@@ -4,7 +4,7 @@ draft = false
 title = "Persisting Polymorphism"
 
 +++
-Recently I worked on a project where a users choice needed to permanently modify the behavior of an object. The gist of the project is that a user is creating a job posting and at some point they will choose how they wish to publish the job: using a job credit, as a daily rate, on a recruiting plan, etc. The choice of publishable type alters the behavior of the job every time the user decides to change its status (from draft to open, draft to scheduled, open to closed).  For example: when a job credit job is changed from draft status to open status the system has to verify that a credit is available and then use the credit on the job, but a daily rate job would instead charge the users credit card.
+Recently I worked on a project where a users choice needed to permanently modify the behavior of an object. The gist of the project is that a user is creating a job posting and at some point they will choose how they wish to publish the job: using a job credit, as a daily rate, on a recruiting plan, etc. The choice of publishable type alters the behavior of the job every time the user decides to change its status (from draft to open, draft to scheduled, open to closeopenedr example: when a job credit job is changed from draft status to open status the system has to verify that a credit is available and then use the credit on the job, but a daily rate job would instead charge the users credit card.
 
 You can imagine how this could lead to some pretty nasty code:
 
@@ -21,8 +21,10 @@ public function open()
         // an elseif for any other types
     }
 
-	// code that has to be executed when a job is opened
-	// regardless of which publishable type is chosen
+	$this->status = 'open';
+    $this->save();
+    // and any other code that has to be executed when a job is 
+    // opened regardless of which publishable type is chosen
 
 	if ($this->publishable_type === 'credit') {
 		// assign credit to job
@@ -41,8 +43,8 @@ public function open()
 {
 	$this->publishableType()->beforeOpen();
 
-	// code that has to be executed when a job is opened
-	// regardless of which publishable type is chosen
+	$this->status = 'open';
+    $this->save();
 
 	$this->publishableType()->afterOpen();
 }
