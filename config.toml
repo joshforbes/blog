@@ -4,6 +4,7 @@ title = "joshforb.es"
 
 [Params]
   Author = "Josh Forbes"
+  twitter = "forbesdeveloper"
   disqusShortname = "joshforb-es"
 
 [menu]
