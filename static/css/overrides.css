@@ -1,0 +1,14 @@
+/* About section */
+.sidebar-about h1 {
+    font-size: 2.00rem;
+}
+
+/* Meta data line below post title */
+.post-date {
+    font-size: .9rem;
+}
+
+.read-more-link {
+    font-size: .9rem;
+    padding-top: .3rem;
+}

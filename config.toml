@@ -1,6 +1,15 @@
 baseURL = "https://joshforb.es/"
 languageCode = "en-us"
-title = "joshforbes"
+title = "joshforb.es"
 
 [Params]
   Author = "Josh Forbes"
+
+[menu]
+    [[menu.main]]
+      name       = "github"
+      url        = "https://github.com/joshforbes"
+
+    [[menu.main]]
+      name       = "twitter"
+      url        = "https://twitter.com/forbesdeveloper"
