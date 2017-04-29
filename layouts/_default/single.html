@@ -4,10 +4,21 @@
 
         <div class="content container">
             <div class="post">
-                <h1>{{ .Title }}</h1>
+                <h1 class="post-title">{{ .Title }}</h1>
                 <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
                 {{ .Content }}
             </div>
+
+            <hr>
+
+            <div class="newsletter">
+                <h2>Like this post?</h2>
+                <p>Sign up to receive new posts in your inbox as soon as they are published.</p>
+                {{ partial "newsletter-signup" . }}
+            </div>
+
+            <hr>
+
 
             {{ if (ne .Site.Params.disqusShortname "") }}
                 <h2>Comments</h2>

@@ -1,9 +1,11 @@
-/* About section */
+pre {
+    margin-bottom: 1rem !important;
+}
+
 .sidebar-about h1 {
     font-size: 2.00rem;
 }
 
-/* Meta data line below post title */
 .post-date {
     font-size: .9rem;
 }
@@ -11,4 +13,25 @@
 .read-more-link {
     font-size: .9rem;
     padding-top: .3rem;
+}
+
+.post {
+    margin-bottom: 2rem !important;
+}
+
+.newsletter {
+    margin-bottom: 2rem;
+}
+
+#mc_embed_signup {
+    clear:left;
+    width:100%;
+}
+
+#mce-EMAIL {
+    float: left;
+}
+
+#mc-embedded-subscribe {
+    /*float: left;*/
 }
