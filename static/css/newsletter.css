@@ -24,7 +24,7 @@
     background: #43bab6;
     color: #fefefe;
     font-size: 80%;
-    border: 1px;
+    border: 1px solid #43bab6;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     transition: background .2s ease-in-out;
