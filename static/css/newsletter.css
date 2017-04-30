@@ -16,10 +16,11 @@ input {
 .newsletter-email {
     height: 46px;
     width: 70%;
-    color: #fefefe;
+    color: #515151;
     font-size: 80%;
     text-indent: 5%;
     border: 1px solid #cfcfcf !important;
+    border-radius: 0;
 }
 
 .newsletter-email::-webkit-input-placeholder {
