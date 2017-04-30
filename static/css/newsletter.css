@@ -11,10 +11,14 @@
 .newsletter-email {
     height: 46px;
     width: 70%;
+    color: #fefefe;
     font-size: 80%;
     text-indent: 5%;
     border: 1px solid #cfcfcf !important;
-    border-radius: 5px 0 0 5px;
+}
+
+.newsletter-email::-webkit-input-placeholder {
+    color: #b8b8b8;
 }
 
 
@@ -25,7 +29,6 @@
     color: #fefefe;
     font-size: 80%;
     border: 1px solid #43bab6;
-    border-radius: 0 5px 5px 0;
     cursor: pointer;
     transition: background .2s ease-in-out;
 }
