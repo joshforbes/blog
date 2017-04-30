@@ -2,6 +2,10 @@ pre {
     margin-bottom: 1rem !important;
 }
 
+code {
+    line-height: 1.7em !important;
+}
+
 .sidebar-about h1 {
     font-size: 2.00rem;
 }
@@ -19,19 +23,4 @@ pre {
     margin-bottom: 2rem !important;
 }
 
-.newsletter {
-    margin-bottom: 2rem;
-}
 
-#mc_embed_signup {
-    clear:left;
-    width:100%;
-}
-
-#mce-EMAIL {
-    float: left;
-}
-
-#mc-embedded-subscribe {
-    /*float: left;*/
-}

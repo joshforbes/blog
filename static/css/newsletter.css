@@ -1,0 +1,35 @@
+.newsletter {
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+}
+
+.newsletter-email {
+    height: 46px;
+    width: 70%;
+    font-size: 80%;
+    text-indent: 5%;
+    border: 1px solid #cfcfcf !important;
+    border-radius: 5px 0 0 5px;
+}
+
+
+.newsletter-submit {
+    height: 46px;
+    width: 30%;
+    background: #43bab6;
+    color: #fefefe;
+    font-size: 80%;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+.newsletter-submit:hover {
+    background: #3ea29e;
+}
