@@ -28,7 +28,7 @@ public function open()
 
 	if ($this->publishable_type === 'credit') {
 		// assign credit to job
-	} elseif ($this->publishable_type === 'daily) {
+	} elseif ($this->publishable_type === 'daily') {
 		// whatever needs to be done for daily job
 	} elseif ($this->publishable_type === 'plan' {
 		// an elseif for any other types
