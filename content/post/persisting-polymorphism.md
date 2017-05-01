@@ -14,7 +14,7 @@ public function open()
 	if ($this->publishable_type === 'credit') {
         // verify credit is available and anything else that 			
         // needs to be done before a credit job is opened
-    } elseif ($this->publishable_type === 'daily) {
+    } elseif ($this->publishable_type === 'daily') {
         // charge credit card or anything that needs to be
         // done before a daily job is opened
     } elseif ($this->publishable_type === 'plan' {
