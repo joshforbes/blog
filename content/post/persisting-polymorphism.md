@@ -2,6 +2,7 @@
 date = "2017-05-01T21:43:12-04:00"
 draft = false
 title = "Persisting Polymorphism"
+description = 'Recently I worked on a project where a user’s choice needed to permanently modify the behavior of an object. The gist of the project is that a user is creating a job posting and at some point they will choose how they wish to publish the job: using a job credit, as a daily rate, on a recruiting plan, etc. The choice of publishable type alters the behavior of the job every time the user decides to change its status (from draft to open, draft to scheduled, open to closed).'
 
 +++
 Recently I worked on a project where a user's choice needed to permanently modify the behavior of an object. The gist of the project is that a user is creating a job posting and at some point they will choose how they wish to publish the job: using a job credit, as a daily rate, on a recruiting plan, etc. The choice of publishable type alters the behavior of the job every time the user decides to change its status (from draft to open, draft to scheduled, open to closed). For example: when a job credit job is changed from draft status to open status the system has to verify that a credit is available and then use the credit on the job, but a daily rate job would instead charge the users credit card.
@@ -11,7 +12,7 @@ You can imagine how this could lead to some pretty nasty code:
 ```php
 public function open()
 {
-	if ($this->publishable_type === 'credit') {
+    if ($this->publishable_type === 'credit') {
         // verify credit is available and anything else that 			
         // needs to be done before a credit job is opened
     } elseif ($this->publishable_type === 'daily') {
